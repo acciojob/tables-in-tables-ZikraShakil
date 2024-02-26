@@ -1,96 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tables in Tables</title>
-<style>
-    table {
-        border-collapse: collapse;
-    }
-    th, td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: center;
-    }
-    .black-cell {
-        background-color: black;
-        color: white;
-    }
-</style>
-</head>
-<body>
-
-<table border="1">
-    <tr>
-        <td>
-            <table>
-                <tr>
-                    <th colspan="2">Nested Table 1</th>
-                </tr>
-                <tr>
-                    <td>Cell 1</td>
-                    <td>Cell 2</td>
-                </tr>
-                <tr>
-                    <td>Cell 3</td>
-                    <td>Cell 4</td>
-                </tr>
-            </table>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table style="width: 100%; height: 100%">
+      <tr>
+        <td style="width: 50%">
+          <table style="width: 100%; height: 100%">
+            <tr>
+              <th colspan="2">Nested Table 1</th>
+            </tr>
+            <tr>
+              <td>Cell 1</td>
+              <td>Cell 2</td>
+            </tr>
+            <tr>
+              <td>Cell 3</td>
+              <td>Cell 4</td>
+            </tr>
+          </table>
         </td>
-        <td>
-            <table>
-                <tr>
-                    <th colspan="2">Nested Table 2</th>
-                </tr>
-                <tr>
-                    <th>Column 1</th>
-                    <th>Column 2</th>
-                </tr>
-                <tr>
-                    <td>Cell 5</td>
-                    <td class="black-cell">HTML</td>
-                </tr>
-            </table>
+        <td style="width: 50%">
+          <table style="width: 100%; height: 100%">
+            <tr>
+              <th colspan="2">Nested Table 2</th>
+            </tr>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+            </tr>
+            <tr>
+              <td>Cell 5</td>
+              <td style="background-color: black; color: white">HTML</td>
+            </tr>
+          </table>
         </td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td colspan="2">
-            <table>
-                <tr>
-                    <th colspan="2">Nested Table 3</th>
-                </tr>
-                <tr>
-                    <td>List</td>
-                    <td>
-                        <ul>
-                            <li>List item 1</li>
-                            <li>List item 2</li>
-                            <li>List item 3</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+          <table style="width: 100%; height: 100%">
+            <tr>
+              <th colspan="2">Nested Table 3</th>
+            </tr>
+            <tr>
+              <td>List</td>
+              <td>
+                <ul>
+                  <li>List item 1</li>
+                  <li>List item 2</li>
+                  <li>List item 3</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
         </td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td colspan="2">
-            <table>
-                <tr>
-                    <th colspan="2">Nested Table 4</th>
-                </tr>
-                <tr>
-                    <td>Cell 6</td>
-                    <td>Cell 7</td>
-                </tr>
-                <tr>
-                    <td>Cell 8</td>
-                    <td>Cell 9</td>
-                </tr>
-            </table>
+          <table style="width: 100%; height: 100%">
+            <tr>
+              <th colspan="2">Nested Table 4</th>
+            </tr>
+            <tr>
+              <td>Cell 6</td>
+              <td>Cell 7</td>
+            </tr>
+            <tr>
+              <td>Cell 8</td>
+              <td>Cell 9</td>
+            </tr>
+          </table>
         </td>
-    </tr>
-</table>
-
-</body>
+      </tr>
+    </table>
+  </body>
 </html>
